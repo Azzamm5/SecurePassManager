@@ -1,0 +1,33 @@
+.
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.cjs
+├── public
+│   └── vite.svg
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   ├── 1.png
+│   │   ├── 2.png
+│   │   ├── icons8-google.svg
+│   │   └── react.svg
+│   ├── components
+│   │   ├── Dashboard.jsx
+│   │   ├── Login.jsx
+│   │   └── SignUp.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   ├── responsive.css
+│   └── styles
+│       ├── Dashboard.css
+│       ├── Login.css
+│       └── SignUp.css
+├── tailwind.config.js
+├── tree.txt
+└── vite.config.js
+
+6 directories, 25 files

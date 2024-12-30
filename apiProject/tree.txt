@@ -1,0 +1,226 @@
+.
+├── Controllers
+│   └── AccountController.cs
+├── DTOs
+│   ├── AccountDto.cs
+│   └── AccountUpdateDto.cs
+├── Data
+│   └── AppDbContext.cs
+├── Exceptions
+│   └── AccountNotFoundException.cs
+├── Helpers
+│   └── QueryObject.cs
+├── Interfaces
+│   └── IAccountRepository.cs
+├── Mappers
+│   └── AccountMapper.cs
+├── Migrations
+│   ├── 20241227180616_InitialMigrate.Designer.cs
+│   ├── 20241227180616_InitialMigrate.cs
+│   └── AppDbContextModelSnapshot.cs
+├── Models
+│   └── Account.cs
+├── Program.cs
+├── Properties
+│   └── launchSettings.json
+├── Repository
+│   └── AccountRepository.cs
+├── Services
+│   ├── AES_EncryptionService.cs
+│   ├── AES_Utils.cs
+│   └── PasswordService.cs
+├── Validators
+│   ├── AccountDtoValidator.cs
+│   └── AccountUpdateDtoValidator.cs
+├── apiProject.csproj
+├── apiProject.http
+├── apiProject.sln
+├── appsettings.Development.json
+├── appsettings.json
+├── bin
+│   └── Debug
+│       └── net8.0
+│           ├── Azure.Core.dll
+│           ├── Azure.Identity.dll
+│           ├── FluentValidation.AspNetCore.dll
+│           ├── FluentValidation.DependencyInjectionExtensions.dll
+│           ├── FluentValidation.dll
+│           ├── Humanizer.dll
+│           ├── Microsoft.AspNetCore.OpenApi.dll
+│           ├── Microsoft.Bcl.AsyncInterfaces.dll
+│           ├── Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+│           ├── Microsoft.CodeAnalysis.CSharp.dll
+│           ├── Microsoft.CodeAnalysis.Workspaces.dll
+│           ├── Microsoft.CodeAnalysis.dll
+│           ├── Microsoft.Data.SqlClient.dll
+│           ├── Microsoft.EntityFrameworkCore.Abstractions.dll
+│           ├── Microsoft.EntityFrameworkCore.Design.dll
+│           ├── Microsoft.EntityFrameworkCore.Relational.dll
+│           ├── Microsoft.EntityFrameworkCore.SqlServer.dll
+│           ├── Microsoft.EntityFrameworkCore.dll
+│           ├── Microsoft.Extensions.DependencyModel.dll
+│           ├── Microsoft.Identity.Client.Extensions.Msal.dll
+│           ├── Microsoft.Identity.Client.dll
+│           ├── Microsoft.IdentityModel.Abstractions.dll
+│           ├── Microsoft.IdentityModel.JsonWebTokens.dll
+│           ├── Microsoft.IdentityModel.Logging.dll
+│           ├── Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+│           ├── Microsoft.IdentityModel.Protocols.dll
+│           ├── Microsoft.IdentityModel.Tokens.dll
+│           ├── Microsoft.OpenApi.dll
+│           ├── Microsoft.SqlServer.Server.dll
+│           ├── Microsoft.Win32.SystemEvents.dll
+│           ├── Mono.TextTemplating.dll
+│           ├── Swashbuckle.AspNetCore.Swagger.dll
+│           ├── Swashbuckle.AspNetCore.SwaggerGen.dll
+│           ├── Swashbuckle.AspNetCore.SwaggerUI.dll
+│           ├── System.CodeDom.dll
+│           ├── System.Composition.AttributedModel.dll
+│           ├── System.Composition.Convention.dll
+│           ├── System.Composition.Hosting.dll
+│           ├── System.Composition.Runtime.dll
+│           ├── System.Composition.TypedParts.dll
+│           ├── System.Configuration.ConfigurationManager.dll
+│           ├── System.Drawing.Common.dll
+│           ├── System.IdentityModel.Tokens.Jwt.dll
+│           ├── System.Memory.Data.dll
+│           ├── System.Runtime.Caching.dll
+│           ├── System.Security.Cryptography.ProtectedData.dll
+│           ├── System.Security.Permissions.dll
+│           ├── System.Windows.Extensions.dll
+│           ├── apiProject
+│           ├── apiProject.deps.json
+│           ├── apiProject.dll
+│           ├── apiProject.pdb
+│           ├── apiProject.runtimeconfig.json
+│           ├── appsettings.Development.json
+│           ├── appsettings.json
+│           ├── cs
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── de
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── es
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── fr
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── it
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── ja
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── ko
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── pl
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── pt-BR
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── ru
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── runtimes
+│           │   ├── unix
+│           │   │   └── lib
+│           │   │       └── net6.0
+│           │   │           ├── Microsoft.Data.SqlClient.dll
+│           │   │           └── System.Drawing.Common.dll
+│           │   ├── win
+│           │   │   └── lib
+│           │   │       └── net6.0
+│           │   │           ├── Microsoft.Data.SqlClient.dll
+│           │   │           ├── Microsoft.Win32.SystemEvents.dll
+│           │   │           ├── System.Drawing.Common.dll
+│           │   │           ├── System.Runtime.Caching.dll
+│           │   │           ├── System.Security.Cryptography.ProtectedData.dll
+│           │   │           └── System.Windows.Extensions.dll
+│           │   ├── win-arm
+│           │   │   └── native
+│           │   │       └── Microsoft.Data.SqlClient.SNI.dll
+│           │   ├── win-arm64
+│           │   │   └── native
+│           │   │       └── Microsoft.Data.SqlClient.SNI.dll
+│           │   ├── win-x64
+│           │   │   └── native
+│           │   │       └── Microsoft.Data.SqlClient.SNI.dll
+│           │   └── win-x86
+│           │       └── native
+│           │           └── Microsoft.Data.SqlClient.SNI.dll
+│           ├── tr
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           ├── zh-Hans
+│           │   ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│           │   ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│           │   └── Microsoft.CodeAnalysis.resources.dll
+│           └── zh-Hant
+│               ├── Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+│               ├── Microsoft.CodeAnalysis.CSharp.resources.dll
+│               ├── Microsoft.CodeAnalysis.Workspaces.resources.dll
+│               └── Microsoft.CodeAnalysis.resources.dll
+├── obj
+│   ├── Debug
+│   │   └── net8.0
+│   │       ├── apiProject.AssemblyInfo.cs
+│   │       ├── apiProject.AssemblyInfoInputs.cache
+│   │       ├── apiProject.GeneratedMSBuildEditorConfig.editorconfig
+│   │       ├── apiProject.GlobalUsings.g.cs
+│   │       ├── apiProject.MvcApplicationPartsAssemblyInfo.cache
+│   │       ├── apiProject.MvcApplicationPartsAssemblyInfo.cs
+│   │       ├── apiProject.assets.cache
+│   │       ├── apiProject.csproj.AssemblyReference.cache
+│   │       ├── apiProject.csproj.CoreCompileInputs.cache
+│   │       ├── apiProject.csproj.FileListAbsolute.txt
+│   │       ├── apiProject.csproj.Up2Date
+│   │       ├── apiProject.dll
+│   │       ├── apiProject.genruntimeconfig.cache
+│   │       ├── apiProject.pdb
+│   │       ├── apiProject.sourcelink.json
+│   │       ├── apphost
+│   │       ├── ref
+│   │       │   └── apiProject.dll
+│   │       ├── refint
+│   │       │   └── apiProject.dll
+│   │       ├── staticwebassets
+│   │       │   ├── msbuild.build.apiProject.props
+│   │       │   ├── msbuild.buildMultiTargeting.apiProject.props
+│   │       │   └── msbuild.buildTransitive.apiProject.props
+│   │       └── staticwebassets.build.json
+│   ├── apiProject.csproj.EntityFrameworkCore.targets
+│   ├── apiProject.csproj.nuget.dgspec.json
+│   ├── apiProject.csproj.nuget.g.props
+│   ├── apiProject.csproj.nuget.g.targets
+│   ├── project.assets.json
+│   └── project.nuget.cache
+└── tree.txt
+
+51 directories, 173 files
