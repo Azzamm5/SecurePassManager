@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mac/Desktop/Full_stack/Projet/apiProject/apiProject.csproj": {}
+    "/Users/mac/Desktop/API_NET/apiProject/apiProject.csproj": {}
   },
   "projects": {
-    "/Users/mac/Desktop/Full_stack/Projet/apiProject/apiProject.csproj": {
+    "/Users/mac/Desktop/API_NET/apiProject/apiProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/Desktop/Full_stack/Projet/apiProject/apiProject.csproj",
+        "projectUniqueName": "/Users/mac/Desktop/API_NET/apiProject/apiProject.csproj",
         "projectName": "apiProject",
-        "projectPath": "/Users/mac/Desktop/Full_stack/Projet/apiProject/apiProject.csproj",
+        "projectPath": "/Users/mac/Desktop/API_NET/apiProject/apiProject.csproj",
         "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/Desktop/Full_stack/Projet/apiProject/obj/",
+        "outputPath": "/Users/mac/Desktop/API_NET/apiProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mac/.nuget/NuGet/NuGet.Config"

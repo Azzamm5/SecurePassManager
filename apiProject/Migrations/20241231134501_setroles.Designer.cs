@@ -12,8 +12,8 @@ using apiProject.Data;
 namespace apiProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241231121706_SeedRoles")]
-    partial class SeedRoles
+    [Migration("20241231134501_setroles")]
+    partial class setroles
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

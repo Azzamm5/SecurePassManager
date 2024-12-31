@@ -5,7 +5,7 @@
 namespace apiProject.Migrations
 {
     /// <inheritdoc />
-    public partial class Register : Migration
+    public partial class setroles : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
